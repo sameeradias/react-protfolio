@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: transparent; /* Transparent background for outer navbar */
+}
+
+/* Container for the blurred and translucent effect */
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(
+    46,
+    46,
+    62,
+    0.7
+  ); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Apply blur effect to create translucency */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--color-accent-blue);
+}
+
+.navbar__cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__contact {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__button {
+  background-color: var(--color-accent-green);
+  color: var(--color-text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__button:hover {
+  background-color: #00994d;
+}

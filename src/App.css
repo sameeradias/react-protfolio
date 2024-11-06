@@ -2,37 +2,22 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Define Color Palette */
+:root {
+  /* Primary Colors */
+  --color-primary-bg: #1a1a2e; /* Midnight Blue */
+  --color-secondary-bg: #2e2e3e; /* Charcoal Gray */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* Accent Colors */
+  --color-accent-aqua: #00ccff; /* Aqua Blue */
+  --color-accent-green: #00cc66; /* Emerald Green */
+  --color-highlight-yellow: #ffd369; /* Warm Yellow */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* Text Colors */
+  --color-text-primary: #d1d1e0; /* Light Gray */
+  --color-text-secondary: #ffffff; /* White */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* Additional Colors */
+  --color-hover-dark-green: #00994d; /* Darker Green for Hover */
+  --color-hover-dark-aqua: #0088cc; /* Darker Aqua for Hover */
 }
